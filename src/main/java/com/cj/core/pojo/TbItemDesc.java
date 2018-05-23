@@ -1,8 +1,10 @@
 package com.cj.core.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class TbItemDesc {
+public class TbItemDesc implements Serializable{
+    private static final long serialVersionUID = 6504309461654603537L;
     private Long itemId;
 
     private Date created;

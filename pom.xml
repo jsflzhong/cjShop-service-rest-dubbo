@@ -15,17 +15,52 @@
 
     <!--依赖back后台工程的包,可以间接的依赖到back工程所依赖的jar包,common工程,等等.  -->
     <dependencies>
+
         <!-- Redis客户端 -->
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
             <version>${jedis.version}</version>
         </dependency>
+
+        <!--common工程引入-->
         <dependency>
             <groupId>com.cj</groupId>
             <artifactId>cjShop-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
+        <!--dubbo的facade接口工程引入-->
+        <dependency>
+            <groupId>com.cj</groupId>
+            <artifactId>cjShop-facade-rest</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <!-- dubbo required jars start -->
+        <dependency>
+            <groupId>org.jboss.netty</groupId>
+            <artifactId>netty</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
+        </dependency>
+        <!-- dubbo required jars end -->
 
         <!--mybatis-->
         <dependency>
