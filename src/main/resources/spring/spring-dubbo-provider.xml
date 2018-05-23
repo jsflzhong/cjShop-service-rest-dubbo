@@ -17,14 +17,25 @@ http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 	<!-- 监控中心配置，protocol="registry"，表示从注册中心发现监控中心地址 -->
 	<!--<dubbo:monitor protocol="registry"/>-->
 
+
+	<!--####################### dubbo: xml配置的方式. 亲测可用.######################-->
+
 	<!-- 当ProtocolConfig和ServiceConfig某属性没有配置时,采用此缺省值。 连接和线程池的配置。 -->
-	<dubbo:provider timeout="10000" threadpool="fixed" threads="100" accepts="1000" />
+	<!--<dubbo:provider timeout="10000" threadpool="fixed" threads="100" accepts="1000" />-->
 	<!-- 权限服务接口 -->
 	<!-- ：这里用 dubbo:service 标签开头的，都是要发布出去的servie的接口（即
          interface : service在facade工程中的接口全名，也就是在生产者这边的service实现的上层接口。
          ref: 本工程中,对facade 工程中的service接口的实现类头上的注解后括号中的bean的名字.例如: @Component("userQueryFacade") -->
-	<dubbo:service retries="0" interface="com.cj.core.facade.service.ItemFacade" ref="itemFacade" />
+	<!--<dubbo:service retries="0" interface="com.cj.core.facade.service.ItemFacade" ref="itemFacade" />
 	<dubbo:service retries="0" interface="com.cj.core.facade.service.ItemCatFacade" ref="itemCatFacade" />
-	<dubbo:service retries="0" interface="com.cj.core.facade.service.ContentFacade" ref="contentFacade" />
-	<!--<dubbo:annotation package="com.cj.core.facade.service"/>-->
+	<dubbo:service retries="0" interface="com.cj.core.facade.service.ContentFacade" ref="contentFacade" />-->
+
+
+
+
+	<!--####################### dubbo: 注解Annotation配置的方式. 亲测可用.######################-->
+
+	<!-- 扫描注解包路径，多个包用逗号分隔，不填pacakge表示扫描当前ApplicationContext中所有的类
+		 坑:这里配的包一定要ctrl+左键点一下,因为有时候会默认扫的是jar中的包!而非项目中的包! 会导致启动服务卡死! -->
+	<dubbo:annotation package="com.cj.core.facade"/>
 </beans>

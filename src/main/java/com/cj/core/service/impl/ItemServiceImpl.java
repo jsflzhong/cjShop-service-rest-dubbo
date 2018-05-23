@@ -80,6 +80,7 @@ public class ItemServiceImpl implements ItemService {
 
         //2.调用mapper,根据商品id查询商品基本信息
         TbItem item = itemMapper.selectByPrimaryKey(itemId);
+        System.out.println("@@@@@@@@@ getItemById_afterRedis, item = " + item + " @@@@@@@@@" );
 
         //3.向redis中添加缓存。
         //如果上面走的是流程2,去查数据库了,则说明缓存中没有我要的数据.这里在返回前,应该把该数据,添加进Redis缓存.

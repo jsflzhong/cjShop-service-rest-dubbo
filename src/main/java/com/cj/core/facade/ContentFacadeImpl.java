@@ -1,11 +1,12 @@
 package com.cj.core.facade;
 
+import com.alibaba.dubbo.config.annotation.Service;  // dubbo: 注解配置的方式
 import com.cj.common.pojo.TaotaoResult;
 import com.cj.core.facade.service.ContentFacade;
 import com.cj.core.pojo.TbContent;
 import com.cj.core.service.ContentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+//import org.springframework.stereotype.Service; // dubbo: xml配置的方式
 
 import java.util.List;
 
@@ -14,7 +15,8 @@ import java.util.List;
  *
  * @author cj
  */
-@Service("contentFacade")
+// @Service("contentFacade") //dubbo: xml配置的方式
+@Service(version="1.0.0")  // dubbo: 注解配置的方式
 public class ContentFacadeImpl implements ContentFacade {
 
     @Autowired

@@ -1,12 +1,13 @@
 package com.cj.core.facade;
 
+import com.alibaba.dubbo.config.annotation.Service; // dubbo: 注解配置的方式
 import com.cj.core.facade.service.ItemFacade;
 import com.cj.core.pojo.TbItem;
 import com.cj.core.pojo.TbItemDesc;
 import com.cj.core.pojo.TbItemParamItem;
 import com.cj.core.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+//import org.springframework.stereotype.Service;  // dubbo: xml配置的方式
 
 /**
  * dubbo facade接口的实现.
@@ -15,7 +16,9 @@ import org.springframework.stereotype.Service;
  * @description 商品service
  * @date 2018/5/16
  */
-@Service("itemFacade")
+
+//@Service("itemFacade") // dubbo: xml配置的方式
+@Service(version="1.0.0")  // dubbo: 注解配置的方式
 public class ItemFacadeImpl implements ItemFacade {
 
     @Autowired
