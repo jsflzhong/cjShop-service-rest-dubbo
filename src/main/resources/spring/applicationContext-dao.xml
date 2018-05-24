@@ -31,6 +31,11 @@
 				<!-- 如果还要加载其他目录下的资源文件,在这里接续写value即可. -->
 				<!-- //配置缓存. 李旭,暂时没学到那里.-->
 				<!--<value>classpath:properties/memcached.properties</value>-->
+
+				<!-- 引入spring-common-config工程jar包中的配置文件
+                     坑: 需要引入明确的全限定名,而不能用通配符.否则无法找到.-->
+				<value>classpath:public_system.properties</value>
+				<value>classpath:db.properties</value>
 			</list>
 		</property>
 	</bean>

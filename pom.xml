@@ -23,14 +23,21 @@
             <version>${jedis.version}</version>
         </dependency>
 
-        <!--common工程引入-->
+        <!-- common工程引入 -->
         <dependency>
             <groupId>com.cj</groupId>
             <artifactId>cjShop-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
-        <!--dubbo的facade接口工程引入-->
+        <!-- common-config接口工程引入 -->
+        <dependency>
+            <groupId>com.cj</groupId>
+            <artifactId>cjShop-common-config</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <!-- facade-rest接口工程引入 -->
         <dependency>
             <groupId>com.cj</groupId>
             <artifactId>cjShop-facade-rest</artifactId>
