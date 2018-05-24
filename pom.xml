@@ -16,13 +16,6 @@
     <!--依赖back后台工程的包,可以间接的依赖到back工程所依赖的jar包,common工程,等等.  -->
     <dependencies>
 
-        <!-- Redis客户端 -->
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-            <version>${jedis.version}</version>
-        </dependency>
-
         <!-- common工程引入 -->
         <dependency>
             <groupId>com.cj</groupId>
@@ -75,6 +68,13 @@
             <artifactId>zkclient</artifactId>
         </dependency>
         <!-- dubbo required jars end -->
+
+        <!-- Redis客户端 -->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>${jedis.version}</version>
+        </dependency>
 
         <!--mybatis-->
         <dependency>
