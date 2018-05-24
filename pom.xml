@@ -37,6 +37,13 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
+        <!-- common-core接口工程引入 -->
+        <dependency>
+            <groupId>com.cj</groupId>
+            <artifactId>cjShop-common-core</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
         <!-- facade-rest接口工程引入 -->
         <dependency>
             <groupId>com.cj</groupId>

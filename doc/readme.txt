@@ -3,6 +3,10 @@
 本工程中删除:resources.properties, public_system.properties, 和db.properties.
 改为从cjShop-common-config工程打成的jar包中引入资源文件.
 
+删除了pojo,改为由cjShop-common-core工程的jar引入.
+
+删除了jedis,改为由cjShop-common工程的jar引入.
+
 
 #20180523
 rest服务的生产者,通过dubbo暴露服务

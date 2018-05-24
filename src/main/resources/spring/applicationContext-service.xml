@@ -36,10 +36,10 @@
 	</bean>
 	<bean id="jedisPool" class="redis.clients.jedis.JedisPool">
 		<constructor-arg name="poolConfig" ref="jedisPoolConfig"></constructor-arg>
-		<constructor-arg name="host" value="39.105.62.153"></constructor-arg>
-		<constructor-arg name="port" value="6500"></constructor-arg>
-		<constructor-arg name="timeout" value="2000"></constructor-arg>
-		<constructor-arg name="password" value="showmethemoney!@#"></constructor-arg>
+		<constructor-arg name="host" value="${redis.host}"></constructor-arg>
+		<constructor-arg name="port" value="${redis.port}"></constructor-arg>
+		<constructor-arg name="timeout" value="${redis.timeout}"></constructor-arg>
+		<constructor-arg name="password" value="${redis.password}"></constructor-arg>
 	</bean>
 	
 	<!-- 
