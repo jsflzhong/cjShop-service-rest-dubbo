@@ -7,6 +7,10 @@
 
 删除了jedis,改为由cjShop-common工程的jar引入.
 
+删除了Controller层和相关的配置.
+
+删除了web.xml
+
 
 #20180523
 rest服务的生产者,通过dubbo暴露服务
