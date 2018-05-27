@@ -1,6 +1,6 @@
 package com.cj.core.mapper;
 
-import com.cj.common.pojo.TaotaoResult;
+import com.cj.core.pojo.TaotaoResult;
 import com.cj.core.pojo.TbItemParam;
 import com.cj.core.pojo.TbItemParamExample;
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.cj.core.service.impl;
 
-import com.cj.common.utils.JsonUtils;
+import com.cj.core.utils.JsonUtils;
 import com.cj.core.mapper.TbItemDescMapper;
 import com.cj.core.mapper.TbItemMapper;
 import com.cj.core.mapper.TbItemParamItemMapper;

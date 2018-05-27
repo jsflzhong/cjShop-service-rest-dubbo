@@ -8,8 +8,8 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import com.cj.common.pojo.TaotaoResult;
-import com.cj.common.utils.JsonUtils;
+import com.cj.core.pojo.TaotaoResult;
+import com.cj.core.utils.JsonUtils;
 import com.cj.core.mapper.TbContentMapper;
 import com.cj.core.pojo.TbContent;
 import com.cj.core.pojo.TbContentExample;

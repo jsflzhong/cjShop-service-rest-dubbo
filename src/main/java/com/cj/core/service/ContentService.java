@@ -2,7 +2,7 @@ package com.cj.core.service;
 
 import java.util.List;
 
-import com.cj.common.pojo.TaotaoResult;
+import com.cj.core.pojo.TaotaoResult;
 import com.cj.core.pojo.TbContent;
 
 public interface ContentService {

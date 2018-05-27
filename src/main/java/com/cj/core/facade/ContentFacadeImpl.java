@@ -1,7 +1,7 @@
 package com.cj.core.facade;
 
 import com.alibaba.dubbo.config.annotation.Service;  // dubbo: 注解配置的方式
-import com.cj.common.pojo.TaotaoResult;
+import com.cj.core.pojo.TaotaoResult;
 import com.cj.core.facade.service.ContentFacade;
 import com.cj.core.pojo.TbContent;
 import com.cj.core.service.ContentService;
